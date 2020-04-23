@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/resume', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/resume'));
+    res.sendFile(path.join(__dirname + '/public/resume.html'));
 })
 
 app.use('/js', express.static(__dirname + '/public/js'));
