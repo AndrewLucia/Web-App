@@ -1,0 +1,150 @@
+a {color: var(--main-text-color); text-decoration: none;}
+a:hover {color: var(--secondary-color);}
+body {  
+    margin: 0;
+    --header-height: 55px; 
+    --header-padding: 20px; 
+    --pulldown-item-height: 7.5px;
+    --main-color: #002639;
+    --main-text-color: white;
+    --secondary-color: salmon;
+    --tertiary-color: lightgray;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    letter-spacing: .1em;
+}
+body main{
+    padding-top: 95px;
+}
+body header:first-of-type{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 95px;
+    padding: 20px 0;
+    z-index: 100;
+    color: var(--main-text-color); 
+    background: var(--main-color);
+    box-sizing: border-box;
+}
+body header:first-of-type a { color: var(--main-text-color); text-decoration: none;}
+body header:first-of-type a:hover { color: var(--secondary-color); }
+
+body header:first-of-type nav {max-width:1200px; margin: 0 auto;}
+body header:first-of-type nav ul {padding: 0; margin: -20px 20px 0 0;  list-style: none;  }
+body header:first-of-type nav ul li { position: relative; font-weight: 400; text-transform: uppercase; display: inline-block; padding: 20px 14px; line-height: var(--header-height); margin: 0; }
+body header:first-of-type nav ul li:hover { color: var(--secondary-color); background-color: #193b4c; }
+body header:first-of-type nav ul li nav { display: none; background-color: #193b4c; width: 100px; position: absolute; left: 0;  margin-top: 20px; padding: 10px 10px 0 10px; z-index: 103; }
+body header:first-of-type nav ul li nav ul { padding: 0 10px; margin: 0; list-style: none; width: 100%; }
+body header:first-of-type nav ul li nav ul li { font-weight: 700; text-transform: none; vertical-align: top; display: inline-block; width: 80%; padding: var(--pulldown-item-height) 0; line-height: 2em;  }
+
+
+/* index */
+body main div.page-background.one {width: 100%; height: 750px;}
+body main div.page-background.one {background: url(images/slider-background.jpg) center center no-repeat transparent fixed;
+    background-size: cover; margin: 0;}
+body main div.page-background.one h1 {font-size: 2.5em; padding-top: 100px; margin: 0; display: flex; justify-content: center; color: var(--main-text-color);}
+body main div.page-background.one section {color: var(--main-text-color); margin: 0 auto; padding: 100px 0px;}
+body main div.page-background.one section dl {margin: 0 auto; max-width: 1200px; display: flex; flex-direction: row;}
+body main div.page-background.one section dl dt {display: flex; flex-direction: row; border-right: 3px solid var(--main-text-color); width: 55%;}
+body main div.page-background.one section dl dt label {font-size: 1.2em; text-align: center; margin: auto 10px auto 0px; padding-left: 10px; width: 50%;}
+body main div.page-background.one section dl dt label strong {display: block; font-size: 2em;}
+body main div.page-background.one section dl dt image {padding: 20px 10px 10px 20px; border-radius: 25%; width: 250px; height: 250px;}
+body main div.page-background.one section dl dd {margin: auto 0 auto 20px;}
+
+body main div.page-background.two div.arrow {margin: 0; width: 80px; height: 80px; position: relative; top: -50px; left: 47%; background: white; border-radius: 50%;}
+body main div.page-background.two div.arrow img {width: 80%; height: auto; position: relative; top: 10%; left: 10%;}
+
+body main div.page-background.two {background: rgb(238, 234, 228); width: 100%; padding-bottom: 100px;}
+body main div.page-background.two div.floater {
+    width: 400px; height: 200px; top: -75px; background: white; position: relative; margin: 0; left: 20%; border-radius: 25px;
+    display: flex; justify-content: center; align-items: center; color: var(--main-color); font-size: 1.5em;}
+body main div.page-background.two div.interests {max-width: 1200px; margin: 0 auto; padding-top: 50px;}
+body main div.page-background.two h1 {max-width: 800px; font-size: 2.5em; padding: 0px 0px 25px 0; margin: 0 auto; display: flex; justify-content: center; border-bottom: solid 1px lightgray;}
+body main div.page-background.two ul {display: grid; grid-template-columns: 10fr 10px 10fr 10px 3fr 10px 10fr; grid-template-rows: 10fr 10px 60px 10px 10px 10fr 10px 70px 10px 10fr; max-width: 1200px; 
+    margin: 0 auto; padding: 0; padding-top: 50px; height: 800px;}
+body main div.page-background.two ul li {color: white; list-style: none; display: flex; justify-content: center; align-items: center; background-size: cover;}
+body main div.page-background.two ul li span {visibility: hidden;}
+body main div.page-background.two ul li:hover {transform: scale(1.1);}
+body main div.page-background.two ul li:hover span {visibility: visible;}
+body main div.page-background.two ul li.ski {grid-column: 1; grid-row: 1 / span 3; background-image: url(images/skiing.jpg)}
+body main div.page-background.two ul li.ski:hover {background-image: linear-gradient(rgba(14, 22, 43, 0.774), rgba(14, 22, 43, 0.774)), url(images/skiing.jpg);}
+body main div.page-background.two ul li.music {grid-column: 7; grid-row: 1; background-image: url(images/country.jpg);}
+body main div.page-background.two ul li.music:hover {background-image: linear-gradient(rgba(14, 22, 43, 0.774), rgba(14, 22, 43, 0.774)), url(images/country.jpg);}
+body main div.page-background.two ul li.travel {grid-column: 1; grid-row: 5 / span 4; background-image: url(images/travel.jpg);}
+body main div.page-background.two ul li.travel:hover {background-image: linear-gradient(rgba(14, 22, 43, 0.774), rgba(14, 22, 43, 0.774)), url(images/travel.jpg);}
+body main div.page-background.two ul li.dog {grid-column: 5 / span 3; grid-row: 3 / span 4; background-image: url(images/rosie.jpg);}
+body main div.page-background.two ul li.dog:hover {background-image: linear-gradient(rgba(14, 22, 43, 0.774), rgba(14, 22, 43, 0.774)), url(images/rosie.jpg);}
+body main div.page-background.two ul li.vg {grid-column: 3 / span 3; grid-row: 1; background-image: url(images/videogames.png)}
+body main div.page-background.two ul li.vg:hover {background-image: linear-gradient(rgba(14, 22, 43, 0.774), rgba(14, 22, 43, 0.774)), url(images/videogames.png);}
+body main div.page-background.two ul li.ws {grid-column: 1; grid-row: 10; background-image: url(images/watersports.jpg);}
+body main div.page-background.two ul li.ws:hover {background-image: linear-gradient(rgba(14, 22, 43, 0.774), rgba(14, 22, 43, 0.774)), url(images/watersports.jpg);}
+body main div.page-background.two ul li.football {grid-column: 3; grid-row: 3 / span 8; background-image: url(images/football.jpg); background-position: center;}
+body main div.page-background.two ul li.football:hover {background-image: linear-gradient(rgba(14, 22, 43, 0.774), rgba(14, 22, 43, 0.774)), url(images/football.jpg);}
+body main div.page-background.two ul li.prog {grid-column: 5 / span 3; grid-row: 8 / span 3; background-image: url(images/programming.png);}
+body main div.page-background.two ul li.prog:hover {background-image: linear-gradient(rgba(14, 22, 43, 0.774), rgba(14, 22, 43, 0.774)), url(images/programming.png);}
+
+/*resume*/
+body main.resume div {width: 100%; color: var(--main-color);}
+body main.resume div h3 {padding-top: 50px; margin: 0; display: flex; justify-content: center;}
+body main.resume div h1 {font-size: 2.5em; padding: 100px 0px 30px 0; margin: 0; display: flex; justify-content: center;}
+body main.resume div section {border-top: var(--tertiary-color) 1px solid; max-width: 800px; margin: 0 auto;}
+body main div.abilities {padding-bottom: 60px;}
+body main div.abilities section dl {display: grid; grid-template-columns: 1fr 4fr; padding-bottom: 40px;}
+body main div.abilities section dl dt {white-space: nowrap; grid-column: 1; height: 10px; margin: 15px 50px 15px 0; display: flex; justify-content: left; align-items: center;}
+body main div.abilities section dl dd {grid-column: 2; height: 10px; margin: 15px 0 15px 0; background:lightgray; border-radius: 5px;}
+body main div.abilities section dl dd div {background: var(--secondary-color); height: 10px; border-radius: 5px;}
+body main div.abilities section.languages dl dd div.python {width: 75%;}
+body main div.abilities section.languages dl dd div.c {width: 65%;}
+body main div.abilities section.languages dl dd div.html {width: 50%;}
+body main div.abilities section.languages dl dd div.css {width: 50%;}
+body main div.abilities section.languages dl dd div.javascript {width: 25%;}
+body main div.abilities section.languages dl dd div.nodejs {width: 25%;}
+body main div.abilities section.languages dl dd div.jquery {width: 25%;}
+body main div.abilities section.languages dl dd div.json {width: 25%;}
+body main div.abilities section.languages dl dd div.sql {width: 25%;}
+body main div.abilities section.tools dl dd div.aws {width: 70%;}
+body main div.abilities section.tools dl dd div.linux {width: 100%;}
+body main div.abilities section.tools dl dd div.windows {width: 100%;}
+body main div.abilities section.tools dl dd div.burpsuite {width: 50%;}
+body main div.abilities section.tools dl dd div.splunk {width: 50%;}
+body main div.abilities section.tools dl dd div.jira {width: 100%;}
+body main div.abilities section.tools dl dd div.cloudlock {width: 80%;}
+body main div.abilities section.tools dl dd div.umbrella {width: 80%;}
+body main div.abilities section.tools dl dd div.oimonitor {width: 70%;}
+
+body main div.experience {background: rgb(238, 234, 228); padding-bottom: 100px;}
+body main div.experience section dl {display: grid; grid-template-columns: 2fr 5fr;}
+body main div.experience section dl dt {grid-column: 1; font-weight: 700; font-size: 1.2em; padding-top: 20px;}
+body main div.experience section dl label {grid-column: 1; grid-row: 2; font-weight: 100; font-size: 1em;}
+body main div.experience section dl dd {grid-column: 2; line-height: 1.5em; padding-bottom: 10px;}
+body main div.experience section dl dd h4 {margin: 0; padding-bottom: 10px; padding-top: 20px;}
+body main div.experience section dl dd a {text-decoration: none; color: salmon; font-weight: 700;}
+
+body main div.experience section dl label:nth-of-type(2) {grid-column: 1; grid-row: 7; padding-top: 20px;}
+body main div.experience section dl label:nth-of-type(3) {grid-column: 1; grid-row: 11;}
+
+body main div.projects {padding-bottom: 100px;}
+body main div.projects section dl {display: grid; grid-template-columns: 2fr 5fr;}
+body main div.projects section dl dt {grid-column: 1; font-weight: 700; font-size: 1.2em; padding-top: 20px;}
+body main div.projects section dl label {grid-column: 1; grid-row: 2; font-weight: 100; font-size: 1em;}
+body main div.projects section dl dd {grid-column: 2; line-height: 1.5em; padding-bottom: 10px;}
+body main div.projects section dl dd h4 {margin: 0; padding-bottom: 10px; padding-top: 20px;}
+body main div.projects section dl dd a {text-decoration: none; color: salmon; font-weight: 700;}
+
+body main div.projects section dl label:nth-of-type(2) {grid-column: 1; grid-row: 4;}
+body main div.projects section dl label:nth-of-type(3) {grid-column: 1; grid-row: 6;}
+body main div.projects section dl label:nth-of-type(4) {grid-column: 1; grid-row: 8;}
+body main div.projects section dl label:nth-of-type(5) {grid-column: 1; grid-row: 10;}
+
+body footer {width: 100%; padding: 100px 0 200px 0; background: var(--main-color); color: var(--main-text-color)}
+body footer h1 {font-size: 2.5em; margin: 0 auto; display: flex; justify-content: center; padding-bottom: 50px; border-bottom: solid var(--tertiary-color) 1px; max-width: 800px;}
+body footer div {max-width: 800px; margin: 0 auto; padding-top: 35px;}
+body footer div ul {text-decoration: none; list-style: none; display: grid; grid-template-columns: 40px auto 40px auto; grid-template-rows: 60px 60px;}
+body footer div ul li {margin-top: 10px; margin-bottom: 10px; display: flex; align-items: center; padding-left: 10px;}
+body footer div ul li.icon {background: rgb(238, 234, 228); border-radius: 5px; padding-left: 0; display: flex; align-items: center; justify-content: center;}
+body footer div ul li.icon img {width: 30px; height: auto; border-radius: inherit;}
+body footer div ul li.icon.email img {padding-top: 5px;}
+body footer div ul li.icon.github img {width: 30px; height: auto; border-radius: inherit; padding-top: 5px;}
+body footer div ul li.icon.linkedin img {width: 30px; height: auto; padding-top: 5px;}
+body footer div ul li.icon.phone img {width: 30px; height: auto;}
+body footer div ul li a {padding: 0; margin: 0;}

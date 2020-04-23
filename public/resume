@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Resume</title>
+        <link href="mainstyle.css" rel="stylesheet"/>
+        <script src="jquery-3.5.0.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <nav id='header-nav'>
+                <ul>
+                    <li onmouseover="$('#nav-aboutme').show()" onmouseout="$('#nav-aboutme').hide()">
+                        <a href=".">Home</a>
+                        <nav id="nav-aboutme">
+                            <ul>
+                                <li class="who-am-i"><a href=".">Who Am I</a></li>
+                                <li class="interests"><a href=".#interests">Interests</a></li>
+                                <li class="nickhaircuts">Haircuts</li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li onmouseover="$('#nav-resume').show()" onmouseout="$('#nav-resume').hide()">
+                        <a href=".">Resume</a>
+                        <nav id="nav-resume">
+                            <ul>
+                                <li class="skills"><a href="#resume">Skills</a></li>
+                                <li class="experience"><a href="#exp-start">Experience</a></li>
+                                <li class="projects"><a href="#proj-start">Projects</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="resume" id="resume">
+            <div class="abilities">
+                <h1>Skills</h1>
+                <section class="languages">
+                    <h3>Languages & Frameworks</h3>
+                    <dl>
+                        <dt>Java</dt>
+                        <dd><div class="java"> </div></dd>
+                        <dt>Python</dt>
+                        <dd><div class="python"> </div></dd>
+                        <dt>C</dt>
+                        <dd><div class="c"></div> </dd>
+                        <dt>HTML</dt>
+                        <dd><div class="html"></div></dd>
+                        <dt>CSS</dt>
+                        <dd><div class="css"></div></dd>
+                        <dt>JavaScript</dt>
+                        <dd><div class="javascript"></div></dd>
+                        <dt>Node.js</dt>
+                        <dd><div class="nodejs"></div></dd>
+                        <dt>JQuery</dt>
+                        <dd><div class="jquery"></div></dd>
+                        <dt>JSON</dt>
+                        <dd><div class="json"></div></dd>
+                        <dt>SQL</dt>
+                        <dd><div class="sql"></div></dd>
+                    </dl>
+                </section>
+                <section class="tools">
+                    <h3>Platforms & Tools</h3>
+                    <dl>
+                        <dt>Linux</dt>
+                        <dd><div class="linux"> </div></dd>
+                        <dt>Windows</dt>
+                        <dd><div class="windows"></div> </dd>
+                        <dt>JIRA</dt>
+                        <dd><div class="jira"></div></dd>
+                        <dt>Cisco Cloudlock</dt>
+                        <dd><div class="cloudlock"></div></dd>
+                        <dt>Cisco Umbrella</dt>
+                        <dd><div class="umbrella"></div></dd>
+                        <dt>AWS</dt>
+                        <dd><div class="aws"> </div></dd>            
+                        <dt>OIMonitor</dt>
+                        <dd><div class="oimonitor"></div></dd>
+                        <dt>BurpSuite</dt>
+                        <dd><div class="burpsuite"></div></dd>
+                        <dt>Splunk</dt>
+                        <dd><div class="splunk"></div></dd>
+                    </dl>
+                </section>
+            </div>
+            <div class="experience" id="exp-start">
+                <h1>Experience</h1>
+                <section class='exp'>
+                    <dl>
+
+                        <dt>Code 4 Community</dt>
+                        <label>Sep 2019 - Present</label>
+                        <dd><h4>Lead DevOps/Backend Engineer - Club</h4></dd>
+                        <dd>
+                            Currently the security and DevOps lead for the development of three web apps in the Code 4 Community club hosted in AWS.
+                        </dd>
+                        <dd>Developed backend API routing and DB connection for our internal C4C site using the Java Vert.x framework and PostgresSQL.</dd>
+                        <dd>Leveraged the Agile software development process for the development of the backend and continual deployent and hosting in AWS.</dd>
+                        <dd><a href="https://github.com/Code-4-Community" target="alt">Check out the code here</a></dd>
+
+    
+                        <dt>Harvard Business Publishing</dt>
+                        <label>Jul 2019 - Dec 2019</label>
+                        <dd><h4>Security Analyst - Co-op</h4></dd>
+                        <dd>Utilized various software tools to detect abnormal activity and mitigate company vulnerability in cyberspace</dd>
+                        <dd>Partially automated the process for on-boarding new vendors to maintain organization and reduce time spent</dd>
+                        <dd>Developed scripts to collect workstation information and assess employee compliance with security policies</dd>
+
+                        <dt>VRology</dt>
+                        <label>June 2018 - July 2018</label>
+                        <dd><h4>Virtual Reality Experience Operator - Part-time</h4></dd>
+                        <dd>Educated guests on different virtual reality experiences, allowing customers to make an informed choice</dd>
+                        <dd>Managed a Point-of-Sale system efficiently to minimize customer waiting time </dd>
+                        <dd>Operated 9Dfx virtual reality motion simulator</dd>
+
+                    </dl>
+                </section>
+            </div>
+            <div class="projects" id="proj-start">
+                <h1>Projects</h1> 
+                <section class='proj'>
+                    <dl>
+
+                        <dt>Simple Animator</dt>
+                        <label>Java</label>
+                        <dd><h4><a href="https://github.com/AndrewLucia/Northeastern-Projects/tree/master/hw06(3)" target="alt">Github</a></h4></dd>
+                        <dd>This is a simple animator which allows you to create certain shapes and transform them at certain times to create a simple animation. 
+                            It offers different views including an SVG, a Visual, and a Textual. It utilizes the MVC pattern.</dd>
+
+                        <dt>BGP Router</dt>
+                        <label>Python</label>
+                        <dd><h4><a href="https://github.com/AndrewLucia/Northeastern-Projects/blob/master/router.py" target="alt">Github</a></h4></dd>
+                        <dd>A simple BGP router that handles routing packets, updating, coallescing and other router functions.
+                            "Packets" are JSON entries of a specific format depending on the packet.</dd>
+                        
+                        <dt>TCP Implementation</dt>
+                        <label>Python</label>
+                        <dd><h4><a href="https://github.com/AndrewLucia/Northeastern-Projects/tree/master/TCP%20Implementation" target="alt">Github</a></h4></dd>
+                        <dd>Two files that represent a sender and receiver utilizing a simple implementation of TCP in Python.
+                            The implementation uses a version of slow-start and resend to handle congestion, drops, etc.
+                        </dd>
+
+                        <dt>Memory Allocator</dt>
+                        <label>C</label>
+                        <dd><h4><a href="https://github.com/AndrewLucia/Northeastern-Projects/tree/master/Simple%20Memory%20Allocator" target="alt">Github</a></h4></dd>
+                        <dd>This is an interpretation of the C function malloc. It uses mmap to allocate the memory pages
+                            and uses an implementation of the bucket linked list structure to keep track and free memory blocks.</dd>
+                        
+                        <dt>File System</dt>
+                        <label>C</label>
+                        <dd><h4><a href="https://github.com/AndrewLucia/Northeastern-Projects/tree/master/File%20System" target="alt">Github</a></h4></dd>
+                        <dd>A working file system that uses a linked list of nodes containing meta-data to keep track of memory.
+                            Contains everything from making, renaming, removing directories and more.
+                        </dd>
+
+                    </dl>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <h1>Contact</h1>
+            <div>
+                <ul>
+                    <li class="icon email"><a href="mailto:lucia.an@husky.neu.edu"><img src="images/email-logo.png"/></a></li>
+                    <li><a href="mailto:lucia.an@husky.neu.edu">lucia.an@husky.neu.edu</a></li>
+                    <li class="icon linkedin"><a href="https://www.linkedin.com/in/andrew-lucia-b2617417a/" target="alt"><img src="images/linkedin.png"/></a></li>
+                    <li><a href="https://www.linkedin.com/in/andrew-lucia-b2617417a/" target="alt">LinkedIn</a></li>
+                    <li class="icon github"><a href="https://github.com/AndrewLucia/Northeastern-Projects" target="alt"><img src="images/github.png"/></a></li>
+                    <li><a href="https://github.com/AndrewLucia/Northeastern-Projects" target="alt">Github</a></li>
+                    <li class="icon phone"><img src="images/phone.png"/></li>
+                    <li>978-886-1728</li>
+                </ul>
+            </div>
+
+        </footer>
+    </body>
+</html>

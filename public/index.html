@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Welcome to my website!</title>
+        <link href="mainstyle.css" rel="stylesheet"/>
+        <script src="jquery-3.5.0.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+
+        <header>
+            <nav id='header-nav'>
+                <ul>
+                    <li onmouseover="$('#nav-aboutme').show()" onmouseout="$('#nav-aboutme').hide()">
+                        <a href=".">Home</a>
+                        <nav id="nav-aboutme">
+                            <ul>
+                                <li class="who-am-i"><a href="#start">Who Am I</a></li>
+                                <li class="interests"><a href="#interests">Interests</a></li>
+                                <li class="nickhaircuts">Haircuts</li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li onmouseover="$('#nav-resume').show()" onmouseout="$('#nav-resume').hide()">
+                        <a href="resume">Resume</a>
+                        <nav id="nav-resume">
+                            <ul>
+                                <li class="skills"><a href="resume">Skills</a></li>
+                                <li class="experience"><a href="resume#exp-start">Experience</a></li>
+                                <li class="projects"><a href="resume#proj-start">Projects</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="home" id="start">
+            <div class="page-background one" id="whoami">
+                <h1>Who Am I?</h1>
+                <section class="first">
+                    <dl>
+                        <dt>
+                            <img src="images/member-default.jpg"/>
+                            <label>
+                                <strong>Andrew Lucia</strong>
+                                3rd Year Cybersecurity Major,
+                                Northeastern University
+                            </label>
+                        </dt>
+                        <dd>
+                            <p>
+                                Software developer with a mind for security.
+                            </p>
+                        </dd>
+                    </dl>
+                </section>
+            </div>
+            <div class="page-background two" id="interests">
+                <div class='arrow'><a href="#interests"><img src="images/down-arrow.png"/></a></div>
+                <div class="interests">
+                    <h1>Interests</h1>
+                    <ul>
+                        <li class="ski"><span>Skiing</span></li>
+                        <li class="music"><span>Country Music</span></li>
+                        <li class="travel"><span>Travel</span></li>
+                        <li class="dog"><span>Dogs</span></li>
+                        <li class="vg"><span>Video Games</span></li>
+                        <li class="ws"><span>Wakeboarding</span></li>
+                        <li class="football"><span>Football</span></li>
+                        <li class='prog'><span>Programming (of course)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1>Contact</h1>
+            <div>
+                <ul>
+                    <li class="icon email"><a href="mailto:lucia.an@husky.neu.edu"><img src="images/email-logo.png"/></a></li>
+                    <li><a href="mailto:lucia.an@husky.neu.edu">lucia.an@husky.neu.edu</a></li>
+                    <li class="icon linkedin"><a href="https://www.linkedin.com/in/andrew-lucia-b2617417a/" target="alt"><img src="images/linkedin.png"/></a></li>
+                    <li><a href="https://www.linkedin.com/in/andrew-lucia-b2617417a/" target="alt">LinkedIn</a></li>
+                    <li class="icon github"><a href="https://github.com/AndrewLucia/Northeastern-Projects" target="alt"><img src="images/github.png"/></a></li>
+                    <li><a href="https://github.com/AndrewLucia/Northeastern-Projects" target="alt">Github</a></li>
+                    <li class="icon phone"><img src="images/phone.png"/></li>
+                    <li>978-886-1728</li>
+                </ul>
+            </div>
+            
+        </footer>
+    </body>
+</html>
