@@ -4,11 +4,11 @@ const app = express();
 var router = express.Router();
 
 router.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + 'public/index.html'));
+    res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 router.get('/resume', function(req, res) {
-    res.sendFile(path.join(__dirname + 'public/resume'));
+    res.sendFile(path.join(__dirname + '/public/resume'));
 })
 
 app.use('/js', express.static('/js'));
