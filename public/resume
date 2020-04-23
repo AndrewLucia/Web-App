@@ -3,8 +3,8 @@
 <html>
     <head>
         <title>Resume</title>
-        <link href="/css/mainstyle.css" rel="stylesheet"/>
-        <script src="/js/jquery-3.5.0.min.js"></script>
+        <link href="css/mainstyle.css" rel="stylesheet"/>
+        <script src="js/jquery-3.5.0.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
     </head>
     <body>

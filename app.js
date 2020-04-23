@@ -11,8 +11,8 @@ router.get('/resume', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/resume'));
 })
 
-app.use('/js', express.static(__dirname + '/js'));
-app.use('/css', express.static(__dirname + '/css'));
+app.use('/js', express.static(__dirname + '/public/js'));
+app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/', router);
 
 
